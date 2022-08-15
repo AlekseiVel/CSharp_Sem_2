@@ -15,13 +15,15 @@ if(numberA <= 99)
 {
     Console.WriteLine($"У числа {numberA} нет второй цифры");
 }
-int mid_res = 0;
+
 if(numberA >= 1000)
 {
-for(mid_res = numberA; 
-    mid_res >= 100 && mid_res <= 1000; 
-    third = mid_res % 10)
+    int mid = numberA;
+    while(mid > 999)
     {
-        Console.WriteLine($"Третья цифра числа {numberA}: {third}");
+        mid = mid / 10;
     }
+    third = mid % 10;
+
+Console.WriteLine($"Третья цифра числа {numberA}: {third}");
 }

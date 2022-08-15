@@ -18,13 +18,10 @@ if(numberA <= 99)
 int mid_res = 0;
 if(numberA >= 1000)
 {
-    mid_res = numberA;
+for(mid_res = numberA; 
+    mid_res >= 100 && mid_res <= 1000; 
+    third = mid_res % 10)
+    {
+        Console.WriteLine($"Третья цифра числа {numberA}: {third}");
+    }
 }
-
-while(mid_res >= 100 && mid_res <= 1000)
-{
-    mid_res = mid_res / 10;
-}
-
-third = mid_res % 10;
-Console.WriteLine($"Третья цифра числа {numberA}: {third}");

@@ -10,7 +10,7 @@ int second = number % 10;
 
 if(first > second)
 {
-    Console.WriteLine("Наибольая цифра в нем: " + first);
+    Console.WriteLine("Наибольшая цифра в нем: " + first);
 }
 else
 {
